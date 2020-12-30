@@ -9,7 +9,6 @@ import {Section} from '../../models/Section';
 export class SectionViewerComponent implements OnInit{
   showImg: boolean;
   contentImgID: string;
-  sectionContentID: string;
   sectionContent: string;
   displayedSection: Section;
   displayedImagePath: string;
