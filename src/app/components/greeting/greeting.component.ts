@@ -14,8 +14,7 @@ export class GreetingComponent implements OnInit {
 
   ngOnInit(): void {
     this.greetingDivID = 'greeting';
-    this.titleImgID = 'title-image';
-    const imagesPathPrefix = '../../assets/images/';
+    const imagesPathPrefix = 'assets/images/';
     this.titleImgSrc = imagesPathPrefix + 'intel.jpg';
   }
 

@@ -1,4 +1,13 @@
-<div class="wrapper">
-  <app-greeting></app-greeting>
-  <app-navigation-bar></app-navigation-bar>
+<div id="mainframe">
+  <div class="wrapper">
+    <app-greeting></app-greeting>
+    <app-navigation-bar (switchSectionRequest)="replaceSectionViewerContent($event)">
+    </app-navigation-bar>
+    <app-section-viewer
+      [section]="currentDisplayedSection"
+      *ngIf="currentDisplayedSection !== undefined">
+    </app-section-viewer>
+    <app-content-placeholder *ngIf="currentDisplayedSection === undefined">
+    </app-content-placeholder>
+  </div>
 </div>

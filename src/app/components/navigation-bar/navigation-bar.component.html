@@ -1,3 +1,7 @@
-<ul>
-  <li *ngFor="let section of sections">{{ section.title }}</li>
+<ul id="navitemsList">
+  <li *ngFor="let section of sections"
+      (click)="onSectionSelect(section)"
+      [ngClass]="{selectedNavItem: selected == section, navigationItem: true}">
+    {{ section.title }}
+  </li>
 </ul>

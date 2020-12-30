@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Section } from '../models/Section';
+import { Data } from '../../assets/mock_data/Data';
 
 @Injectable({
   providedIn: 'root'
@@ -12,9 +13,7 @@ export class SectionService {
   }
 
   getSections(): Section[] {
-    return [
-      {title: 'title1', content: 'content1'},
-      {title: 'title2', content: 'content2'}
-    ];
+    // on a real app this will be replaced with database/REST api
+    return Data.getSectionsMockData();
   }
 }
