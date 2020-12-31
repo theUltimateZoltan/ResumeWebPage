@@ -101,3 +101,27 @@ ul{
   box-shadow: 0 0 12px 2px black;
   margin-left: 20px;
 }
+
+#ExternalLinks {
+  position: fixed;
+  bottom: 1%;
+  width:100%;
+  text-align: center;
+  background-color: #bdd2d2;
+}
+
+#ExternalLinks ul {
+  margin:0 auto;
+  padding:1px;
+  text-align: center;
+  width:fit-content;
+}
+
+
+#ExternalLinks li{
+  list-style-type: none;
+  float: left;
+  display: block;
+  font-weight: bold;
+  font-family: Arial;
+}

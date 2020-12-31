@@ -7,6 +7,7 @@ import { GreetingComponent } from './components/greeting/greeting.component';
 import {HttpClientModule} from '@angular/common/http';
 import { SectionViewerComponent } from './components/section-viewer/section-viewer.component';
 import { ContentPlaceholderComponent } from './components/content-placeholder/content-placeholder.component';
+import { ExternalLinksComponent } from './components/external-links/external-links.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ContentPlaceholderComponent } from './components/content-placeholder/co
     NavigationBarComponent,
     GreetingComponent,
     SectionViewerComponent,
-    ContentPlaceholderComponent
+    ContentPlaceholderComponent,
+    ExternalLinksComponent
   ],
   imports: [
     BrowserModule,
