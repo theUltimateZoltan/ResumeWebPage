@@ -13,7 +13,7 @@ export class ExternalLinksComponent implements OnInit {
     this.links = [
       ['LinkedIn', 'https://www.linkedin.com/in/eladtheprogrammer/'],
       ['GitHub', 'https://github.com/theUltimateZoltan'],
-      ['Gmail', 'mail:eladlevypersonal@gmail.com']
+      ['Gmail', 'mailto:eladlevypersonal@gmail.com']
     ];
 
   }
